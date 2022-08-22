@@ -19,7 +19,7 @@ namespace ArUpdateReceiveMake
 
             base.BarItemClick(e);
 
-            //
+            //应收单列表-点击"更新应收单回签"按钮时执行
             if (e.BarItemKey == "tbReceiveMake")
             {
                 //获取列表上通过复选框勾选的记录

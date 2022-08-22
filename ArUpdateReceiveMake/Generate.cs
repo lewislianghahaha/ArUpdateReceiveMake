@@ -52,7 +52,6 @@ namespace ArUpdateReceiveMake
         /// <summary>
         /// 连接字符串
         /// </summary>
-        /// <param name="conid">0:连接K3数据库,1:连接条码库</param>
         /// <returns></returns>
         private string GetConnectionString()
         {
