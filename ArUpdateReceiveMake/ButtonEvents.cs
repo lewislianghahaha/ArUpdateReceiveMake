@@ -53,15 +53,15 @@ namespace ArUpdateReceiveMake
 
                 }
 
+                //View.ShowMessage(flistid);
+
                 //根据所获取的单据号进行批量更新
                 var result = generate.UpdateMake(flistid);
-                mesage = result == "Finish" ? "所选择的销售出库单,反审核成功" : $"出库数据与条码系统数据同步操作异常,原因:'{result}'";
-                //当出现异常时才提示
-                if (result != "Finish")
-                {
+                mesage = result == "Finish" ? "所选择的应收单,更新成功" : $"操作异常,原因:'{result}'";
+                //if (result != "Finish")
+                //{
                     View.ShowMessage(mesage);
-                }
-
+               // }
             }
         }
     }

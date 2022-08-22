@@ -8,7 +8,7 @@
         {
             _result = $@"
                             UPDATE T_AR_RECEIVABLE SET F_YTC_TEXT20='已完成'
-                            WHERE doc_no in ({ordernolist})
+                            WHERE FBILLNO in ({ordernolist})
                         ";
 
             return _result;
